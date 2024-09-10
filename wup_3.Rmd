@@ -1,7 +1,7 @@
 ---
 title: "Alcohol vs Seat choice"
-author: "Your Name"
-date: "Fall 2020"
+author: "Onalee Garusinghe"
+date: "Fall 2024"
 output: html_document
 ---
 
@@ -27,7 +27,12 @@ basicCN <- ggplot(davisdata,aes(y=alcohol,x=Seat))
 ```{r}
 basicCN + geom_boxplot()
 ```
-  
+   The median of the back boxplot is higher than both medians for the front and middle boxplots. The front median is slightly higher than the middle median. The outliers for the back boxplot goes farther than any of the front or middle outliers.
+ 
+ 
+```{r}
+plot(alcohol~Seat,data=davisdata)
+```
   
 ### get fancy  
 
