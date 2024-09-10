@@ -30,9 +30,6 @@ basicCN + geom_boxplot()
    The median of the back boxplot is higher than both medians for the front and middle boxplots. The front median is slightly higher than the middle median. The outliers for the back boxplot goes farther than any of the front or middle outliers.
  
  
-```{r}
-plot(alcohol~Seat,data=davisdata)
-```
   
 ## Numerical Summarys 
 ```{r}
@@ -46,6 +43,12 @@ model1 <- aov(alcohol~Seat,data=davisdata)
 summary.aov(model1)
 ```
  The probability of getting these results are one out of ten thousand. So, a further investigation is required in order to find out which seats are different from the others.
+ 
+```{r}
+par(mar = c(3, 8.7, 2, 2))
+plot(TukeyHSD(model1),las=2)
+```
+  The front and back are different from each other, while the middle and front are roughly equal but still different both are different from the back. The back is different from the middle and the front.
 
 ## Conclusions
 
