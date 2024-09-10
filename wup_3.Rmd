@@ -35,12 +35,13 @@ plot(alcohol~Seat,data=davisdata)
 ```
   
 ## Numerical Summarys 
-
-## Inferential Tests
 ```{r}
 favstats(alcohol~Seat,data=davisdata)
 ```
   The front and back seats hold about the same amount of people, while the back seat has more than double that amount of people. This summary tells us that even though the back seat had 32 people. they still brang 55 drinks, double the amount of the front row. The back rows average of drinks is 9.6, fron is 1.8 and middle is 3.3.
+  
+## Inferential Tests
+
  
 
 ## Conclusions
