@@ -49,8 +49,10 @@ summary.aov(model1)
 par(mar = c(3, 8.7, 2, 2))
 plot(TukeyHSD(model1),las=2)
 ```
+ 
   The front and back are different from each other, while the middle and front are roughly equal but still different both are different from the back. The back is different from the middle and the front.
 
 ## Conclusions
 
+  When there are 3 or more things to compare the numerical values of, it is important to run a qualifying test, one way anova.  When running an inferential test, you have a probability between 0 and 1 that further investigation will be required. The boxplot made it clear that back row had a higher average of drinks being brought, and the inferential and numerical values solidified this observation.
 
